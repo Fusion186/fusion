@@ -25,7 +25,7 @@ O banco `fusion_jiu_jitsu.db` será criado automaticamente ao lado do programa.
 | Professor | `professor` | `Fusion@2026` |
 | Instrutor | `instrutor` | `Fusion@2026` |
 
-As senhas são armazenadas como hashes no banco. Altere as credenciais antes de usar o sistema com dados reais; a tela de gerenciamento de usuários e troca de senha está prevista para uma próxima etapa.
+As senhas são armazenadas como hashes no banco. Altere as credenciais antes de usar o sistema com dados reais. O professor pode gerenciar contas da equipe pela página **Equipe**, incluindo redefinição de senha; cada usuário também pode alterar a própria senha em **Configurações**. A senha mestre definida no código continua funcionando como acesso de recuperação.
 
 ## Funcionalidades
 
@@ -41,11 +41,12 @@ As senhas são armazenadas como hashes no banco. Altere as credenciais antes de 
 - Prévia individual da área do aluno pela lista administrativa.
 - Foto de perfil opcional, escolhida e ajustada pelo próprio aluno com recorte, zoom e rotação; também visível na prévia administrativa.
 - Histórico dos logins dos alunos na barra lateral e em uma página administrativa completa.
+- Gerenciamento de contas da equipe pelo perfil Professor, com criação, edição, redefinição de senha e exclusão; o sistema protege a conta conectada e exige ao menos um professor.
 - Aba de aniversariantes com seleção de mês e abertura automática no mês atual.
 - Área do aluno somente para consulta: perfil, total de presenças, ranking e aniversariantes.
 - Ordenação da chamada por nome, faixa ou quantidade de presenças no dia.
 - Chamada com vários registros de aula por aluno no mesmo dia; é possível remover o último registro.
 - Faixas adultas e progressões infantis reconhecidas no sistema IBJJF (faixa combinada com branca, sólida e combinada com preta).
-- Área do aluno indicada como etapa futura.
 
 O programa migra automaticamente bancos existentes para permitir mais de uma aula no mesmo dia, preservando as presenças registradas e usando as datas já existentes para iniciar o total de aulas.
+# fusion
